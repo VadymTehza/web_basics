@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk-ua">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна 4 — HTML форма</title>
+</head>
+<body>
+  <h1>Моя перша HTML-форма</h1>
+
+  <form action="https://httpbin.org/get" method="get">
+    <label for="username">Ваше ім’я:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label>Email:
+      <input type="email" name="email">
+    </label><br><br>
+
+    <label for="date">Дата народження:</label>
+    <input type="date" id="date" name="birthday"><br><br>
+
+    <label>Коментар:</label><br>
+    <textarea name="comment" rows="4" cols="40"></textarea><br><br>
+
+    <button type="submit">Відправити</button>
+    <button type="reset">Очистити</button>
+    <picture>
+  <source media="(max-width: 468px)" srcset="https://picsum.photos/300/500">
+  <source media="(min-width: 469px)" srcset="https://picsum.photos/1000/400">
+  <img src="https://picsum.photos/1000/400" alt="Демонстраційне фото">
+</picture>
+
+    <h3>Ваші улюблені напої:</h3>
+<label><input type="checkbox" name="drink" value="Late"> Лате</label>
+<label><input type="checkbox" name="drink" value="tea"> Чай</label>
+<label><input type="checkbox" name="drink" value="kvass"> Квас</label>
+<label><input type="checkbox" name="drink" value="water"> Вода</label>
+
+<h3>Моя національність:</h3>
+<label><input type="radio" name="nation" value="ukrainian"> Українець</label>
+<label><input type="radio" name="nation" value="German"> Німець</label>
+<label><input type="radio" name="nation" value="other"> Інша</label>
+  </form>
+</body>
+</html>
